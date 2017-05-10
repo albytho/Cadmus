@@ -1,0 +1,7 @@
+aylien-apiclient==0.6.0
+Flask==0.12
+gunicorn==19.7.1
+Jinja2==2.9.4
+MarkupSafe==0.23
+Werkzeug==0.11.15
+requests==2.12.4
