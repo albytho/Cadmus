@@ -17,4 +17,4 @@ def process():
 	return render_template('index.html',sentiment=sentiment['polarity'],summary=summary['sentences'])
 
 if __name__ == '__main__':
-	app.run()
+	app.run(debug = True)
