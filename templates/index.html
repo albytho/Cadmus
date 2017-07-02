@@ -17,7 +17,7 @@
 	<div class="form-actions">
 		<form method="post" action="/process">
 			<div class="form-group">
-				<input type="text" class="form-control" name="words" placeholder="URL to article">
+				<input type="text" class="form-control" name="text" placeholder="Text">
 	    	</div>
 
 			<div class="form-group">
@@ -28,7 +28,10 @@
 		</form>
 	</div>
 
-	<h4>Overall Sentiment: {{sentiment}}</h4>
+	<h4>Overall Sentiment:</h4>
+	<p>{{sentiment}}</p>
+	<h4>Label: </h4>
+	<p>{{classification}}</p>
 	<h4>Summary:</h4>
 	{% for sentence in summary %}
 		<p>{{sentence}}</p>
