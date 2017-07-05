@@ -18,4 +18,4 @@ def process():
 	return render_template('index.html',sentiment=sentiment['polarity'],summary=summary['sentences'],classification=classifications['categories'][0]['label'])
 
 if __name__ == '__main__':
-	app.run(debug = True)
+	app.run()
