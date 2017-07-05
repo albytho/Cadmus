@@ -9,7 +9,7 @@ def index():
 
 @app.route('/process', methods=['POST'])
 def process():
-	client = textapi.Client("691d60ef", "e84ff6dca64ad756bd7676e6aef7f989")
+	client = textapi.Client("xxx", "xxx")
 	words = request.form['text']
 	number = request.form['count']
 	sentiment = client.Sentiment({'text': str(words)})
