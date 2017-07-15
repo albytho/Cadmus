@@ -4,7 +4,6 @@
 	<title>Cadmus</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/index.css') }}">
 	<meta name="viewport" content="initial-scale=1">
 </head>
@@ -23,7 +22,7 @@
 	    	</div>
 
 			<div class="form-group">
-				<input type="number" class="form-control" name="count" placeholder="Number of sentences in summary">
+				<input type="text" class="form-control" name="count" placeholder="Number of sentences in summary">
 	    	</div>
 
 	        <button class="btn btn btn-primary" type="submit">Summarize</button>

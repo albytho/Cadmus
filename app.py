@@ -17,7 +17,7 @@ def index():
 def process():
 	client = textapi.Client("691d60ef", "e84ff6dca64ad756bd7676e6aef7f989")
 	words = request.form['text']
-	number = request.form['count']
+	number = int(request.form['count'])
 	sentiment = client.Sentiment({'text': words})
 	summary = client.Summarize({'title': "Hello World",'text': words, 'sentences_number': number})
 	classifications = client.Classify({"text": words})
