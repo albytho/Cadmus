@@ -19,7 +19,7 @@ def process():
 	words = request.form['text']
 	number = request.form['count']
 	sentiment = client.Sentiment({'text': words})
-	summary = client.Summarize({'title': "Hello World",'text': words, 'sentences_number': int(number)})
+	summary = client.Summarize({'title': "Hello World",'text': words, 'sentences_number': number})
 	classifications = client.Classify({"text": words})
 	return render_template('index.html',sentiment=sentiment['polarity'],summary=summary['sentences'],classification=classifications['categories'][0]['label'])
 
